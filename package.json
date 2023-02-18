@@ -1,0 +1,78 @@
+{
+  "name": "haikufy",
+  "displayName": "Haikufy",
+  "description": "Haikufy transforms, Code comments into haiku, Zen in VS Code.",
+  "version": "1.0.0",
+  "publisher": "Donato Rimenti",
+  "license": "MIT",
+  "keywords": [
+    "haiku",
+    "comments",
+    "generator",
+    "gpt",
+    "openai"
+  ],
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aurasphere/haikufy.git"
+  },
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "haikufy.generateHaiku",
+        "title": "Generate Haiku comment",
+        "category": "Haikufy",
+        "enablement": "editorHasSelection"
+      }
+    ],
+    "configuration": {
+      "title": "Haikufy",
+      "properties": {
+        "haikufy.openAiApiKey": {
+          "type": "string",
+          "description": "Your OpenAI API key"
+        }
+      }
+    },
+    "menus": {
+      "editor/context": [
+        {
+          "command": "haikufy.generateHaiku",
+          "group": "haikufy",
+          "when": "editorHasSelection"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "yarn run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "yarn run compile && yarn run lint",
+    "lint": "eslint src --ext ts",
+    "test": "node ./out/test/runTest.js"
+  },
+  "devDependencies": {
+    "@types/glob": "^8.0.1",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "16.x",
+    "@types/vscode": "^1.75.0",
+    "@typescript-eslint/eslint-plugin": "^5.49.0",
+    "@typescript-eslint/parser": "^5.49.0",
+    "@vscode/test-electron": "^2.2.2",
+    "eslint": "^8.33.0",
+    "glob": "^8.1.0",
+    "mocha": "^10.1.0",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "openai": "^3.1.0"
+  }
+}
