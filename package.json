@@ -3,7 +3,7 @@
   "displayName": "Haikufy",
   "description": "Haikufy transforms, Code comments into haiku, Zen in VS Code.",
   "version": "1.0.0",
-  "publisher": "Donato Rimenti",
+  "publisher": "aurasphere",
   "license": "MIT",
   "keywords": [
     "haiku",
@@ -22,6 +22,7 @@
     "type": "git",
     "url": "https://github.com/aurasphere/haikufy.git"
   },
+  "icon": "assets/sakura.png",
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
