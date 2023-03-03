@@ -2,7 +2,7 @@
   "name": "haikufy",
   "displayName": "Haikufy",
   "description": "Haikufy transforms, Code comments into haiku, Zen in VS Code.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "publisher": "aurasphere",
   "license": "MIT",
   "keywords": [
