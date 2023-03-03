@@ -38,6 +38,9 @@ _In Settings, it waits._
 
 ![Zen](https://i.imgur.com/NMk4AH5.gif)
 
-<sub>Copyright (c) 2023 Donato Rimenti</sub>  
+<sub>Disclaimer: this extension sends your code to OpenAI to generate comments. I decline any damage or harm caused by this.</sub>
+
+<sub>Copyright (c) 2023 Donato Rimenti</sub>
+
 <sub><a href="https://www.flaticon.com/free-icons/flower" title="flower icons">Flower icons created by Freepik - Flaticon</a></sub>
 </div>
